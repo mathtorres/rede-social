@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS -->
+      <link rel="stylesheet" href="./src/styles/reset.css" />
+      <link rel="stylesheet" href="./src/styles/globalstyle.css">
+      <link rel="stylesheet" href="./src/styles/index.css" />
+
+      <!-- FONTE -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+
+      <title>Criando rede social</title>
+    </head>
+    <body>
+        <header class="menu">
+            <nav class="menu__content">
+                <img src="./src/assets/img/logo.svg" alt=" Logo TechPosters">
+                <span>Sair</span>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <section class="creation__post">
+                    <div class="post__header">
+                        <img class="image__size" src="./src/assets/img/user1.svg" alt="Samuel Leão">
+                        <div class="post__header-title">
+                            <h3>Samuel Leão</h3>
+                            <span>Front end Engineer</span>
+                        </div>
+                    </div>
+                    <form class="creation__post-form">
+                        <input class="input" type="text" placeholder="Digitar título do post" name="title">
+                        <textarea class="textArea" name="text" id="" cols="30" rows="10" placeholder="Digitar descrição do post"></textarea>
+                        <button type="submit" id="buttonPost">Postar</button>
+                    </form>
+                </section>
+                <div class="container__aside">
+                    <h3 class="title__aside">Sugestões para você seguir</h3>
+                    <aside class="aside__suggestions">
+                            
+                        <ul class="aside__suggestions-list">
+                            
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <section class="posts">
+                <h2>Posts</h2>
+                <ul class="posts__list">
+                </ul>
+            </section>
+            <dialog class="modal__container"></dialog>
+        </main>
+        <script type="module" src="./src/scripts/index.js"></script>
+    </body>
+</html>
